@@ -1,96 +1,114 @@
+.titillium-web-extralight {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
 /* Corps de la page */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Titillium Web";
 }
 
 /* Le loader */
 #loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('dark-headlight-bmw-laptop-4p6x5no7afj3xcc9-4084294628.jpg');
-    background-size: cover; /* L'image prend toute la taille de l'écran */
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    transition: opacity 2s ease-out; /* Transition du fade-out en 2 secondes */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("dark-headlight-bmw-laptop-4p6x5no7afj3xcc9-4084294628.jpg");
+  background-size: cover; /* L'image prend toute la taille de l'écran */
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 2s ease-out; /* Transition du fade-out en 2 secondes */
 }
 
 /* Le texte de bienvenue */
 .message {
-    position: fixed;
-    top: 39%;
-    font-size: 250%;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    opacity: 60%;
+  position: fixed;
+  top: 39%;
+  font-size: 250%;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  opacity: 60%;
 }
 
 /* Fade-out après 2 secondes */
 #loader.fade-out {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* L'effet de fade automatique au bout de 2 secondes */
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* Appliquer le fade-out après 2 secondes */
 #loader {
-    animation: fadeOut 2s forwards;
-    animation-delay: 2s; /* Délai avant le début du fade-out */
+  animation: fadeOut 2s forwards;
+  animation-delay: 2s; /* Délai avant le début du fade-out */
 }
 
+body {
+  color: white;
+  background-color: rgb(3, 0, 9);
+  font-size: 25px;
 
-body{
-    color: white;
-    background-color: rgb(3, 0, 9) ;
 }
-
 
 /* Styles du header */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 35px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 8%;
+  border-bottom: 1px rgb(61, 65, 255) solid;
 }
 
-.titre{
-    font-size: 40px;
-    font-weight: 400;
+
+.titre {
+  font-size: 40px;
+  font-weight: 300;
 }
 
-.bleu{
-    color: #3f65f0;
+.bleu {
+  color: rgb(65, 65, 255);
 }
 
 .navigation {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 1em;
 }
 
 nav button {
-    background: #3f65f0;
-    padding: 8px 12px;
-    border: 2px solid #3f65f0;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
+  background: linear-gradient(blue,80%, #0f0b44);
+  padding: 8px 12px;
+  border: 2px solid #3d5dff;
+  border-radius: 10px;
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size:medium;
+  color: white;
+}
+
+.acceuil{
+    background: linear-gradient(blue,80%, #0f0b44);
+    border: 2px solid #012bf8;
+    border-radius: 8px;
 }
