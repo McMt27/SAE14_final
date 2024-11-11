@@ -4,6 +4,12 @@
     font-style: normal;
   }
 
+  .orbitron-uniquifier {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
 /* Corps de la page */
 body,
 html {
@@ -33,7 +39,7 @@ html {
 /* Le texte de bienvenue */
 .message {
   position: fixed;
-  top: 39%;
+  top: 35%;
   font-size: 250%;
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -64,7 +70,7 @@ html {
 
 body {
   color: white;
-  background-color: rgb(3, 0, 9);
+  background: linear-gradient(rgb(2, 0, 18),80%, #0c0032);
   font-size: 25px;
 
 }
@@ -88,7 +94,9 @@ body {
 }
 
 .bleu {
-  color: rgb(65, 65, 255);
+  color: rgb(0, 34, 255);
+  font-weight: 700;
+  font-family: "Orbitron";
 }
 
 .navigation {
@@ -97,9 +105,9 @@ body {
 }
 
 nav button {
-  background: linear-gradient(blue,80%, #0f0b44);
-  padding: 8px 12px;
-  border: 2px solid #3d5dff;
+  background-color: rgb(2,0, 18);
+  padding: 8px 10px;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   font-family: "Titillium Web";
   font-weight: 600;
@@ -108,7 +116,5 @@ nav button {
 }
 
 .acceuil{
-    background: linear-gradient(blue,80%, #0f0b44);
-    border: 2px solid #012bf8;
-    border-radius: 8px;
+  border-bottom: 3px rgb(255, 255, 255) solid;
 }
