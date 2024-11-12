@@ -26,7 +26,7 @@ top: 0;
 left: 0;
 width: 100vw;
 height: 100vh;
-background-image: url("dark-headlight-bmw-laptop-4p6x5no7afj3xcc9-4084294628.jpg");
+background-image: url(/image/dark-headlight-bmw-laptop-4p6x5no7afj3xcc9-4084294628.jpg);
 background-size: cover; /* L'image prend toute la taille de l'écran */
 background-position: center;
 display: flex;
