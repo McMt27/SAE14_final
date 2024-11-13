@@ -33,7 +33,7 @@ html {
     font-size: 2rem;
     color: white;
     z-index: 1000;
-    animation: fadeOut 2s ease-out 2s forwards;
+    animation: fadeOut 1s ease-out 1s forwards;
     background-image: url(/image/dark-headlight-bmw-laptop-4p6x5no7afj3xcc9-4084294628.jpg);
     background-size: cover;
     background-position: center;
