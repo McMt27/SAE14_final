@@ -82,7 +82,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
   border-bottom: 1px solid rgb(61, 65, 255);
 }
 
@@ -129,85 +129,37 @@ body {
   color: rgb(0, 34, 255);
 }
 
-/* Style des liens "Découvrez le modèle" pour les voitures */
-.box a {
-  color: white; /* Couleur du texte */
-  text-decoration: none; /* Enlève le soulignement */
-}
-
-.box a:hover {
-  color: rgb(0, 34, 255); /* Optionnel : couleur au survol */
-}
-
 .acceuil {
   border-bottom: 3px solid rgb(255, 255, 255);
 }
 
-/* Conteneur pour les sections de voitures */
-.box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Enlève le soulignement des liens de toute la box */
-.car-link {
-  text-decoration: none;
-  /* Enlève le soulignement */
-  color: white;
-  /* Couleur du texte */
-  display: block;
-  /* Assure que le lien couvre toute la section */
-}
-
-/* Assure que la box entière est cliquable */
-.M5,
-.Serie_4 {
-  cursor: pointer;
-  /* Change le curseur pour indiquer qu'on peut cliquer */
-}
-
-/* Ajouter un effet au survol de la box */
-.car-link:hover .M5,
-.car-link:hover .Serie_4 {
-  transform: scale(1.05);
-  /* trouver sur internet */
-
-}
-
-/* Styles des sections pour les voitures M5 et Série 4 */
-.M5,
-.Serie_4 {
-  text-align: center;
-  background-color: rgba(37, 37, 37, 0.7);
-  border: 1px solid #252525;
-  padding: 15px;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(37, 37, 37, 0.7);
-}
-
-.M5 h2,
-.Serie_4 h2 {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.M5 img,
-.Serie_4 img {
+video{
   width: 100%;
-  height: auto;
-  max-height: 150px;
-  object-fit: cover;
-  margin-bottom: 10px;
+  height: 465px;
+  max-width: 100%;          /* Limite la largeur de la vidéo */
+  max-height: 100%;
+  object-fit: cover;          /* Remplir l'espace sans déformation */
+  margin: 0 auto;            /* Centre la vidéo horizontalement */
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.text {
+  position: absolute;
+  top: 100%;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour améliorer la lisibilité */
+  padding: 20px;
   border-radius: 8px;
 }
 
-.M5 p,
-.Serie_4 p {
-  font-size: 1rem;
-  color: #ffffff;
+.text h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.text p {
+  font-size: 16px;
+  margin: 10px ;
 }
