@@ -140,10 +140,6 @@ body {
     /* Enlève le soulignement */
 }
 
-.box a:hover {
-    color: rgb(0, 34, 255);
-}
-
 .location {
     border-bottom: 3px solid rgb(255, 255, 255);
 }
@@ -168,25 +164,14 @@ body {
     /* Assure que le lien couvre toute la section */
 }
 
-/* Assure que la box entière est cliquable */
-.M5,
-.Serie_4,
-.M4 {
-    cursor: pointer;
-}
-
 /* Ajouter un effet au survol de la box */
-.lien:hover .M5,
-.lien:hover .Serie_4,
-.lien:hover .M4 {
+.lien:hover .voiture {
     transform: scale(1.05);
 
 }
 
 /* Styles des sections pour les voitures M5 et Série 4 */
-.M5,
-.Serie_4,
-.M4 {
+.voiture {
     text-align: center;
     background-color: rgba(37, 37, 37, 0.7);
     border: 1px solid #252525;
@@ -195,28 +180,26 @@ body {
     box-shadow: 0 4px 8px rgba(99, 99, 99, 0.7);
 }
 
-.M5 h2,
-.Serie_4 h2,
-.M4 h2 {
+.voiture h2 {
     font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 10px;
 }
 
-.M5 img,
-.Serie_4 img,
-.M4 img {
+.voiture img {
     width: 100%;
     height: auto;
     max-height: 150px;
-    object-fit: cover;
+    object-fit:cover;
     margin-bottom: 10px;
     border-radius: 8px;
 }
 
-.M5 p,
-.Serie_4 p
-.M4 p {
+.voiture p {
     font-size: 1rem;
     color: #ffffff;
+}
+
+.voiture .blue{
+    color:rgb(6, 67, 198) ;
 }
