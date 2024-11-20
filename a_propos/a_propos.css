@@ -32,7 +32,7 @@ html {
     font-size: 2rem;
     color: white;
     z-index: 1000;
-    animation: fadeOut 1s ease-out 1s forwards;
+    animation: fadeOut 0.5s ease-out 0.5s forwards;
     background-image: url(/image/dark-headlight-bmw-laptop-4p6x5no7afj3xcc9-4084294628.jpg);
     background-size: cover;
     background-position: center;
@@ -51,7 +51,7 @@ html {
 
 body {
     visibility: hidden;
-    animation: showContent 2.2s ease-out forwards;
+    animation: showContent 1s ease-out forwards;
 }
 
 @keyframes showContent {
@@ -182,6 +182,11 @@ ul li strong {
 ul li em {
     color: #555;
     font-size: 0.9em;
+}
+
+h1{
+    text-align: center;
+    
 }
 
 footer {
