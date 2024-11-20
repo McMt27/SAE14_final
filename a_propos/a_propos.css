@@ -1,4 +1,3 @@
-/* Polices */
 .titillium-web-extralight {
     font-family: "Titillium Web", sans-serif;
     font-weight: 200;
@@ -91,6 +90,10 @@ body {
     font-weight: 300;
 }
 
+.a_propos {
+    border-bottom: 3px solid rgb(255, 255, 255);
+  }
+
 .bleu {
     color: rgb(0, 34, 255);
     font-weight: 700;
@@ -132,76 +135,53 @@ body {
     color: rgb(0, 34, 255);
 }
 
-/* Style des liens "Découvrez le modèle" pour les voitures */
-.box a {
-    color: white;
-    /* Couleur du texte */
-    text-decoration: none;
-    /* Enlève le soulignement */
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.location {
-    border-bottom: 3px solid rgb(255, 255, 255);
-}
-
-/* Conteneur pour les sections de voitures */
-.box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+/* Sections principales */
+main {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Enlève le soulignement des liens de toute la box */
-.lien {
-    text-decoration: none;
-    /* Enlève le soulignement */
-    color: white;
-    /* Couleur du texte */
-    display: block;
-    /* Assure que le lien couvre toute la section */
-}
-
-/* Ajouter un effet au survol de la box */
-.lien:hover .voiture {
-    transform: scale(1.05);
-
-}
-
-/* Styles des sections pour les voitures M5 et Série 4 */
-.voiture {
-    text-align: center;
-    background-color: rgba(37, 37, 37, 0.7);
-    border: 1px solid #252525;
+    margin: 20px auto;
     padding: 15px;
+    border: 1px solid #ffffff;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(99, 99, 99, 0.7);
+    box-shadow: 0 6px 8px rgba(99, 99, 99, 0.7);
 }
 
-.voiture h2 {
-    font-size: 1.5rem;
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
     color: #ffffff;
+    border-bottom: 2px solid rgb(83, 3, 243);
+    padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.voiture img {
-    width: 100%;
-    height: auto;
-    max-height: 150px;
-    object-fit:cover;
+section p, section ul {
+    margin: 10px 0;
+}
+
+/* Liste pour l'expérience */
+
+ul li {
+    background: rgba(62, 61, 61, 0.261);
     margin-bottom: 10px;
-    border-radius: 8px;
+    padding: 10px;
+    border-left: 4px solid #0c30a6;
 }
 
-.voiture p {
-    font-size: 1rem;
-    color: #ffffff;
+ul li strong {
+    font-size: 1.1em;
 }
 
-.voiture .blue{
-    color:rgb(6, 67, 198) ;
+ul li em {
+    color: #555;
+    font-size: 0.9em;
 }
 
 footer {

@@ -120,3 +120,14 @@ video{
   font-size: 16px;
   margin: 10px;
 }
+
+footer {
+  font-size:xx-small;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background: linear-gradient(90deg, rgba(8, 0, 255, 0.1),rgba(2, 0, 11, 0.5), rgba(8, 0, 255, 0.1));
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
