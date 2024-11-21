@@ -9,10 +9,14 @@
     <script src="https://kit.fontawesome.com/5f54a5c31c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700&display=swap"
+        rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -21,24 +25,31 @@
             <div class="message">Chargement</div>
         </div>
 
-        <a class="titre">Location <span class="bleu">BMW</span></a>
 
-        <div class="box">
-            <h2 class="connexion">Connexion</h2>
-            <div class="new">
-                <span>Vous êtes nouveau ?</span> <a href="/inscription/inscription.html">Créez un compte</a>
+        <div class="login-container">
+            <a class="titre">Location <span class="bleu">BMW</span></a>
+            <!-- Formulaire de connexion -->
+            <div class="login-box">
+                <h2>Se connecter</h2>
+                <p class="gmail">
+                    Veuillez saisir votre adresse e-mail et votre mot de passe
+                </p>
+
+
+                <form>
+                    <input type="email" placeholder="Adresse e-mail (gmail) *" pattern=".+@gmail\.com" required
+                        class="input-field">
+                    <input type="password" placeholder="Mot de passe *" minlength="8" required class="input-field">
+
+                    <button type="submit" class="btn-submit">Suivant</button>
+                </form>
+
+
+                <p class="register">
+                    Pas encore de compte ? <a href="/acceuil/index.html">S'enregistrer</a>
+                </p>
             </div>
         </div>
-    </header>
-
-    <main>
-        <nav class="utilisateur">
-            <a href="/connexion/connexion.html"><button>Connexion</button></a>
-        </nav>
-    </main>
-    <footer>
-        <p>©  2024 Tous droits réservés.</p>
-    </footer>
 </body>
 
 </html>
