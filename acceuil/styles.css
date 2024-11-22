@@ -3,7 +3,7 @@ body,
 html {
     height: 100%;
     margin: 0;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Rajdhani", sans-serif; /* Police pour le contenu */
     color: white;
     background-color: black;
     font-size: 25px;
@@ -14,6 +14,17 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation globale */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 /* En-tête (header) */
@@ -22,58 +33,104 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+    background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 2px solid rgb(61, 65, 255);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Titre */
 .titre {
-    font-size: 40px;
-    font-weight: 300;
-    color: white;
-}
-
-.bleu {
-    color: rgb(0, 34, 255);
+    color: #5078FF;
     font-weight: 700;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Audiowide", sans-serif;
+    text-shadow:
+        0 0 5px #3C4E99,
+        0 0 15px #5078FF,
+        0 0 30px #85AFFF;
 }
 
-.acceuil {
-  border-bottom: 3px solid rgb(255, 255, 255);
+@keyframes neon-glow {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px #5078FF, 
+            0 0 15px #85AFFF, 
+            0 0 25px #5078FF;
+    }
+    50% {
+        text-shadow: 
+            0 0 10px #85AFFF, 
+            0 0 25px #5078FF, 
+            0 0 50px #85AFFF;
+    }
 }
 
 /* Navigation principale */
 .navigation a {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
     color: white;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
     text-decoration: none;
-    font-family: "Titillium Web", sans-serif;
     font-weight: 600;
-    font-size: 20px;
     margin-right: 20px;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .navigation a:hover {
-    color: rgb(0, 34, 255);
+    text-shadow: 
+        0 0 5px #5078FF, 
+        0 0 15px #85AFFF, 
+        0 0 25px #5078FF;
+    color: #85AFFF;
+    border-bottom: 2px solid #5078FF;
+}
+
+.navigation a.active {
+    text-shadow: 
+        0 0 10px #5078FF, 
+        0 0 25px #85AFFF;
+    color: #85AFFF;
+    border-bottom: 2px solid #5078FF;
 }
 
 /* Boutons Connexion et Inscription */
 .utilisateur a button {
-    background-color: transparent;
     padding: 10px 15px;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    font-family: "Titillium Web", sans-serif;
+    margin-inline-start: 10px;
+    font-family: 'Orbitron', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    color: white;
+    border-radius: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+
+    /* Couleurs de base */
+    background-color: rgba(80, 120, 255, 0.1); /* Fond légèrement lumineux */
+    color: #5078FF; /* Bleu néon */
+    border: 2px solid #3C4E99;
+
+    /* Effet néon de base */
+    box-shadow: 
+        0 0 5px #3C4E99,
+        0 0 15px #5078FF;
+
+    /* Animation au repos */
+    transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+/* Effet au survol */
 .utilisateur a button:hover {
-    color: rgb(25, 0, 248);
+    /* Couleur du texte plus intense */
+    color: #85AFFF;
+
+    /* Bordures et ombres renforcées */
+    border-color: #5078FF;
+    box-shadow: 
+        0 0 10px #3C4E99, 
+        0 0 30px #5078FF, 
+        0 0 50px #85AFFF;
+
+    /* Légère mise en avant */
+    transform: scale(1.1);
 }
 
 /* Vidéo */
@@ -100,12 +157,14 @@ video {
 .text h2 {
     font-size: 30px;
     margin-bottom: 15px;
+    font-family: 'Audiowide', sans-serif;
 }
 
 .text p {
     font-size: 18px;
     line-height: 1.6;
     color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 /* Section promotionnelle */
@@ -124,12 +183,13 @@ video {
 .pub p {
     font-size: 18px;
     margin: 0;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 /* Footer */
 footer {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 10px;
@@ -140,28 +200,9 @@ footer {
 
 footer p {
     font-size: small;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 footer i {
     padding: 8px 8px;
-}
-
-
-/* Effets d'animation */
-a,
-button {
-    transition: all 0.3s ease;
-}
-
-body {
-    animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
