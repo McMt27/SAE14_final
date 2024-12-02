@@ -36,6 +36,7 @@ html {
 }
 
 .titre {
+    text-decoration: none;
     color: #5078FF;
     font-weight: 700;
     font-family: "Audiowide", sans-serif;

@@ -29,17 +29,30 @@ html {
 
 /* Titre principal */
 .titre {
+    font-family: "Audiowide", sans-serif;
+    color: #5078FF;
     font-size: 40px;
-    font-weight: 300;
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow:
+        0 0 5px #3C4E99,
+        0 0 15px #5078FF,
+        0 0 30px #85AFFF;
 }
 
-.bleu {
-    color: rgb(0, 34, 255);
-    font-weight: 700;
-    font-family: "Orbitron", sans-serif;
+@keyframes neon-glow {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px #5078FF, 
+            0 0 15px #85AFFF, 
+            0 0 25px #5078FF;
+    }
+    50% {
+        text-shadow: 
+            0 0 10px #85AFFF, 
+            0 0 25px #5078FF, 
+            0 0 50px #85AFFF;
+    }
 }
 
 /* Zone d'inscription */
