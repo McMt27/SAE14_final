@@ -12,32 +12,10 @@
 body,
 html {
     height: 100%;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Rajdhani", sans-serif;
     color: white;
     background-color: rgb(0, 0, 0);
     font-size: 25px;
-}
-
-
-/* Loader */
-#loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    color: white;
-    z-index: 1000;
-    animation: fadeOut 1s ease-out 1s forwards;
-    background-image: url(/image/dark-headlight-bmw-laptop-4p6x5no7afj3xcc9-4084294628.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 /* Texte de bienvenue sur le loader */
@@ -81,55 +59,107 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
-    margin-bottom: 5%;
-    border-bottom: 1px solid rgb(61, 65, 255);
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid rgb(61, 65, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .titre {
-    font-size: 40px;
-    font-weight: 300;
-}
-
-.bleu {
-    color: rgb(0, 34, 255);
-    font-weight: 700;
-    font-family: "Orbitron", sans-serif;
-}
-
-/* Navigation */
-/* Enlève le soulignement des liens de navigation */
-.navigation a {
-    color: white;
-    /* Définit la couleur des liens */
     text-decoration: none;
-    /* Enlève le soulignement */
-    font-family: "Titillium Web", sans-serif;
+    color: #5078FF;
+    font-weight: 700;
+    font-family: "Audiowide", sans-serif;
+    text-shadow:
+        0 0 5px #3C4E99,
+        0 0 15px #5078FF,
+        0 0 30px #85AFFF;
+}
+
+
+@keyframes neon-glow {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px #5078FF, 
+            0 0 15px #85AFFF, 
+            0 0 25px #5078FF;
+    }
+    50% {
+        text-shadow: 
+            0 0 10px #85AFFF, 
+            0 0 25px #5078FF, 
+            0 0 50px #85AFFF;
+    }
+}
+
+/* Navigation principale */
+.navigation a {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
-    padding: 8px 10px;
-    background-color: rgb(0, 0, 0);
+    margin-right: 20px;
+    transition: all 0.3s ease;
 }
 
 .navigation a:hover {
-    color: rgb(0, 34, 255);
+    text-shadow: 
+        0 0 5px #5078FF, 
+        0 0 10px #85AFFF, 
+        0 0 15px #5078FF;
+    color: #85AFFF;
+    border-bottom: 2px solid #5078FF;
+
+}
+
+.navigation a.active {
+    text-shadow: 
+        0 0 5px #5078FF, 
+        0 0 15px #85AFFF;
+    color: #85AFFF;
+    border-bottom: 2px solid #5078FF;
 }
 
 /* Boutons Connexion et Inscription */
 .utilisateur a button {
-    background-color: rgb(0, 0, 0);
-    padding: 8px 10px;
-    border: 1px solid #ffffff;
-    border-radius: 10px;
-    font-family: "Titillium Web", sans-serif;
+    padding: 10px 15px;
+    margin-inline-start: 10px;
+    font-family: 'Orbitron', sans-serif;
     font-weight: 600;
-    font-size: medium;
-    color: white;
+    font-size: 16px;
+    border-radius: 15px;
     cursor: pointer;
+
+    /* Couleurs de base */
+    background-color: rgba(80, 120, 255, 0.1); /* Fond légèrement lumineux */
+    color: #5078FF; /* Bleu néon */
+    border: 2px solid #3C4E99;
+
+    /* Effet néon de base */
+    box-shadow: 
+        0 0 5px #3C4E99,
+        0 0 15px #5078FF;
+
+    /* Animation au repos */
+    transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+/* Effet au survol */
 .utilisateur a button:hover {
-    color: rgb(0, 34, 255);
+    /* Couleur du texte plus intense */
+    color: #85AFFF;
+
+    /* Bordures et ombres renforcées */
+    border-color: #5078FF;
+    box-shadow: 
+        0 0 10px #3C4E99, 
+        0 0 20px #5078FF, 
+        0 0 30px #85AFFF;
+
+    /* Légère mise en avant */
+    transform: scale(1.1);
 }
 
 footer {
@@ -144,9 +174,10 @@ footer {
   }
 /* Conteneur principal */
 .car-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
+    
 }
 
 /* Fiche voiture */
@@ -189,9 +220,14 @@ footer {
 }
 
 .car-details h2 {
-    font-size: 1.8em;
-    color: rgb(0, 34, 255);
-    margin-bottom: 10px;
+    text-decoration: none;
+    color: #5078FF;
+    font-weight: 700;
+    font-family: "Audiowide", sans-serif;
+    text-shadow:
+        0 0 5px #2841a4,
+        0 0 10px #2047c6,
+        0 0 15px #1e48d4;
 }
 
 .car-details .price {
@@ -207,40 +243,68 @@ footer {
     gap: 10px;
 }
 
+/* Spécifications techniques avec effet néon */
 .specs p {
-    background: #00000054;
+    background: rgba(0, 0, 0, 0.6);
     text-align: center;
     flex: 1;
     border-radius: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #5078FF; /* Bordure bleu néon */
+    box-shadow: 
+        0 0 5px #3e5ec6, 
+        0 0 10px #4c699f, 
+        0 0 15px #344fa9;
+    color: #85AFFF; /* Texte bleu clair */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    
+}
+
+.additional-info{
+    padding-bottom: 20px;
 }
 
 .specs p strong {
     font-size: 1.2em;
     display: block;
-    color: rgb(0, 34, 255);
+    color: #85AFFF; /* Texte néon */
+    
 }
-
-/* Informations supplémentaires */
-.additional-info {
-    font-size: 0.9em;
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-/* Bouton Configurer */
+/* Bouton Commander avec effet néon */
 .btn-config {
-    display: inline-block;
-    padding: 12px 20px;
-    font-size: 1em;
-    color: white;
-    background-color: rgb(0, 34, 255);
+    padding: 10px 15px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
     text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s ease;
+
+    /* Couleurs de base */
+    background-color: rgba(80, 120, 255, 0.1); /* Fond légèrement lumineux */
+    color: #5078FF; /* Bleu néon */
+    border: 2px solid #3C4E99;
+
+    /* Effet néon de base */
+    box-shadow: 
+        0 0 5px #3C4E99,
+        0 0 15px #5078FF;
+
+    /* Animation au repos */
+    transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .btn-config:hover {
-    background-color: rgb(0, 28, 209);
+  /* Couleur du texte plus intense */
+  color: #85AFFF;
+
+  /* Bordures et ombres renforcées */
+  border-color: #5078FF;
+  box-shadow: 
+      0 0 10px #3C4E99, 
+      0 0 20px #5078FF, 
+      0 0 30px #85AFFF;
+
+  /* Légère mise en avant */
+  transform: scale(1.1);
 }

@@ -3,7 +3,7 @@ body,
 html {
     height: 100%;
     margin: 0;
-    font-family: "Rajdhani", sans-serif; /* Police pour le contenu */
+    font-family: "Rajdhani", sans-serif;
     color: white;
     background-color: black;
     font-size: 25px;
@@ -16,7 +16,123 @@ html {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* En-tête (header) */
+
+.page-content.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease, visibility 0s 1s;
+}
+
+
+.page-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeOutLoader 1s ease-in-out forwards;
+}
+
+
+@keyframes fadeOutLoader {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+.loader {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 3px solid rgba(0, 102, 255, 0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #0066ff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #0066ff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #0066ff;
+    border-right: 3px solid #0066ff;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite;
+}
+
+.loader span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation: animate 2s linear infinite;
+}
+
+.loader span::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #00aeff;
+    top: -6px;
+    right: -8px;
+    box-shadow: 0 0 20px 5px #0066ff;
+}
+
+@keyframes animateC {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
+}
+
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -27,7 +143,7 @@ html {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Titre */
+
 .titre {
     text-decoration: none;
     color: #5078FF;
@@ -55,7 +171,7 @@ html {
     }
 }
 
-/* Navigation principale */
+
 .navigation a {
     font-family: 'Orbitron', sans-serif;
     font-size: 18px;
@@ -85,7 +201,7 @@ html {
     border-bottom: 2px solid #5078FF;
 }
 
-/* Boutons Connexion et Inscription */
+
 .utilisateur a button {
     padding: 10px 15px;
     margin-inline-start: 10px;
@@ -95,37 +211,29 @@ html {
     border-radius: 15px;
     cursor: pointer;
 
-    /* Couleurs de base */
-    background-color: rgba(80, 120, 255, 0.1); /* Fond légèrement lumineux */
-    color: #5078FF; /* Bleu néon */
+    background-color: rgba(80, 120, 255, 0.1);
+    color: #5078FF;
     border: 2px solid #3C4E99;
 
-    /* Effet néon de base */
     box-shadow: 
         0 0 5px #3C4E99,
         0 0 15px #5078FF;
 
-    /* Animation au repos */
     transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-/* Effet au survol */
 .utilisateur a button:hover {
-    /* Couleur du texte plus intense */
     color: #85AFFF;
 
-    /* Bordures et ombres renforcées */
     border-color: #5078FF;
     box-shadow: 
         0 0 10px #3C4E99, 
         0 0 20px #5078FF, 
         0 0 30px #85AFFF;
 
-    /* Légère mise en avant */
     transform: scale(1.1);
 }
 
-/* Vidéo */
 video {
     width: 100%;
     height: 460px;
@@ -135,7 +243,6 @@ video {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Section de texte */
 .text {
     text-align: center;
     padding: 20px;
@@ -159,7 +266,6 @@ video {
     font-family: 'Rajdhani', sans-serif;
 }
 
-/* Section promotionnelle */
 .pub {
     position: absolute;
     top: 87%;
@@ -178,7 +284,6 @@ video {
     font-family: 'Rajdhani', sans-serif;
 }
 
-/* Footer */
 footer {
     display: flex;
     justify-content: space-between;

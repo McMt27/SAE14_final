@@ -167,8 +167,20 @@ html {
 }
 
 footer {
-    font-size: xx-small;
-    text-align: center;
-    padding: 10px;
-    background: linear-gradient(90deg, rgba(4, 0, 123, 0.1), rgba(2, 0, 11, 0.5), rgba(4, 0, 123, 0.1));
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: small;
+}
+
+footer i {
+    padding: 8px 8px;
 }
