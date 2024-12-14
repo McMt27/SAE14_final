@@ -1,0 +1,310 @@
+/* Polices */
+.titillium-web-extralight {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+}
+
+.orbitron-uniquifier {
+    font-family: "Orbitron", sans-serif;
+}
+
+
+body,
+html {
+    height: 100%;
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+/* Texte de bienvenue sur le loader */
+.message {
+    position: fixed;
+    top: 35%;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+body {
+    visibility: hidden;
+    animation: showContent 2.2s ease-out forwards;
+}
+
+@keyframes showContent {
+    from {
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* En-tête (header) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid rgb(61, 65, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.titre {
+    text-decoration: none;
+    color: #5078FF;
+    font-weight: 700;
+    font-family: "Audiowide", sans-serif;
+    text-shadow:
+        0 0 5px #3C4E99,
+        0 0 15px #5078FF,
+        0 0 30px #85AFFF;
+}
+
+
+@keyframes neon-glow {
+    0%, 100% {
+        text-shadow: 
+            0 0 5px #5078FF, 
+            0 0 15px #85AFFF, 
+            0 0 25px #5078FF;
+    }
+    50% {
+        text-shadow: 
+            0 0 10px #85AFFF, 
+            0 0 25px #5078FF, 
+            0 0 50px #85AFFF;
+    }
+}
+
+/* Navigation principale */
+.navigation a {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.navigation a:hover {
+    text-shadow: 
+        0 0 5px #5078FF, 
+        0 0 10px #85AFFF, 
+        0 0 15px #5078FF;
+    color: #85AFFF;
+    border-bottom: 2px solid #5078FF;
+
+}
+
+.navigation a.active {
+    text-shadow: 
+        0 0 5px #5078FF, 
+        0 0 15px #85AFFF;
+    color: #85AFFF;
+    border-bottom: 2px solid #5078FF;
+}
+
+/* Boutons Connexion et Inscription */
+.utilisateur a button {
+    padding: 10px 15px;
+    margin-inline-start: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+
+    /* Couleurs de base */
+    background-color: rgba(80, 120, 255, 0.1); /* Fond légèrement lumineux */
+    color: #5078FF; /* Bleu néon */
+    border: 2px solid #3C4E99;
+
+    /* Effet néon de base */
+    box-shadow: 
+        0 0 5px #3C4E99,
+        0 0 15px #5078FF;
+
+    /* Animation au repos */
+    transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol */
+.utilisateur a button:hover {
+    /* Couleur du texte plus intense */
+    color: #85AFFF;
+
+    /* Bordures et ombres renforcées */
+    border-color: #5078FF;
+    box-shadow: 
+        0 0 10px #3C4E99, 
+        0 0 20px #5078FF, 
+        0 0 30px #85AFFF;
+
+    /* Légère mise en avant */
+    transform: scale(1.1);
+}
+
+footer {
+    font-size:xx-small;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, rgba(4, 0, 123, 0.1),rgba(2, 0, 11, 0.5), rgba(4, 0, 123, 0.1));
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+/* Conteneur principal */
+.car-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    
+}
+
+/* Fiche voiture */
+.car-box {
+    background-color: rgba(12, 0, 39, 0.3);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 4px 10px rgb(255, 255, 255);
+}
+
+.car-box img{
+    border-radius: 10px 10px 5px 5px;
+}
+
+/* Label gris en haut */
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Image de la voiture */
+.car-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Détails voiture */
+.car-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.car-details h2 {
+    text-decoration: none;
+    color: #5078FF;
+    font-weight: 700;
+    font-family: "Audiowide", sans-serif;
+    text-shadow:
+        0 0 5px #2841a4,
+        0 0 10px #2047c6,
+        0 0 15px #1e48d4;
+}
+
+.car-details .price {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Spécifications techniques */
+.specs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Spécifications techniques avec effet néon */
+.specs p {
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid #5078FF; /* Bordure bleu néon */
+    box-shadow: 
+        0 0 5px #3e5ec6, 
+        0 0 10px #4c699f, 
+        0 0 15px #344fa9;
+    color: #85AFFF; /* Texte bleu clair */
+    font-weight: bold;
+    transition: all 0.3s ease;
+    
+}
+
+.additional-info{
+    padding-bottom: 20px;
+}
+
+.specs p strong {
+    font-size: 1.2em;
+    display: block;
+    color: #85AFFF; /* Texte néon */
+    
+}
+/* Bouton Commander avec effet néon */
+.btn-config {
+    padding: 10px 15px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+
+    /* Couleurs de base */
+    background-color: rgba(80, 120, 255, 0.1); /* Fond légèrement lumineux */
+    color: #5078FF; /* Bleu néon */
+    border: 2px solid #3C4E99;
+
+    /* Effet néon de base */
+    box-shadow: 
+        0 0 5px #3C4E99,
+        0 0 15px #5078FF;
+
+    /* Animation au repos */
+    transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-config:hover {
+  /* Couleur du texte plus intense */
+  color: #85AFFF;
+
+  /* Bordures et ombres renforcées */
+  border-color: #5078FF;
+  box-shadow: 
+      0 0 10px #3C4E99, 
+      0 0 20px #5078FF, 
+      0 0 30px #85AFFF;
+
+  /* Légère mise en avant */
+  transform: scale(1.1);
+}
