@@ -30,7 +30,6 @@ html {
     animation: fadeOutLoader 1s ease-in-out forwards;
 }
 
-
 @keyframes fadeOutLoader {
     0% {
         opacity: 1;
@@ -41,7 +40,6 @@ html {
         visibility: hidden;
     }
 }
-
 
 .loader {
     position: relative;
@@ -105,8 +103,6 @@ html {
     }
 }
 
-
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -116,7 +112,6 @@ html {
     border-bottom: 2px solid rgb(61, 65, 255);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
-
 
 .titre {
     text-decoration: none;
@@ -128,7 +123,6 @@ html {
         0 0 15px #5078FF,
         0 0 30px #85AFFF;
 }
-
 
 @keyframes neon-glow {
     0%, 100% {
@@ -144,7 +138,6 @@ html {
             0 0 50px #85AFFF;
     }
 }
-
 
 .navigation a {
     font-family: 'Orbitron', sans-serif;
@@ -164,7 +157,6 @@ html {
         0 0 15px #5078FF;
     color: #85AFFF;
     border-bottom: 2px solid #5078FF;
-
 }
 
 .navigation a.active {
@@ -175,7 +167,6 @@ html {
     border-bottom: 2px solid #5078FF;
 }
 
-
 .utilisateur a {
     padding: 10px 15px;
     margin-inline-start: 10px;
@@ -184,27 +175,22 @@ html {
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
-
     background-color: rgba(80, 120, 255, 0.1);
     color: #5078FF;
     border: 2px solid #3C4E99;
-
     box-shadow: 
         0 0 5px #3C4E99,
         0 0 15px #5078FF;
-
     transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .utilisateur a:hover {
     color: #85AFFF;
-
     border-color: #5078FF;
     box-shadow: 
         0 0 10px #3C4E99, 
         0 0 20px #5078FF, 
         0 0 30px #85AFFF;
-
     transform: scale(1.1);
 }
 
@@ -285,12 +271,11 @@ footer i {
     }
 
     .navigation a {
-        font-size:12px; /* Réduction des liens */
-
+        font-size: 12px; /* Réduction des liens */
     }
 
     .utilisateur a {
-        font-size:12px ; /* Réduction des boutons */
+        font-size: 12px; /* Réduction des boutons */
     }
     
     body {
@@ -309,7 +294,6 @@ footer i {
         font-size: 0.9em;
     }
 }
-
 
 @media screen and (max-width: 480px) {
     .header {
@@ -343,10 +327,8 @@ footer i {
         font-size: 0.8em;
     }
 
-    .pub{
+    .pub {
         top: 80%;
         right: 1%;
     }
 }
-
-

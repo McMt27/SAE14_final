@@ -13,8 +13,9 @@ html {
     background-image: url(/image/dark-headlight-bmw-laptop-4p6x5no7afj3xcc9-4084294628.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    animation: backgroundAnimation 15s infinite alternate;
 }
-
 
 /* Conteneur principal centré */
 .login-container {
@@ -26,20 +27,20 @@ html {
     width: 100%;
     max-width: 400px;
     max-height: 500px;
+    transition: all 0.3s ease;
 }
 
 .titre {
-    font-family: "Audiowide", sans-serif;
-    color: #5078FF;
-    font-size: 40px;
     text-decoration: none;
+    color: #5078FF;
     font-weight: 700;
+    font-size: 40px;
+    font-family: "Audiowide", sans-serif;
     text-shadow:
         0 0 5px #3C4E99,
         0 0 15px #5078FF,
         0 0 30px #85AFFF;
 }
-
 
 @keyframes neon-glow {
     0%, 100% {
@@ -63,12 +64,6 @@ html {
     margin-bottom: 5px;
 }
 
-.gmail {
-    font-size: 18px;
-    color: #cccccc;
-    margin-bottom: 5px;
-}
-
 /* Champs de saisie */
 .input-field {
     width: 100%;
@@ -76,11 +71,14 @@ html {
     font-size: 1rem;
     margin-bottom: 20px;
     border-radius: 5px;
-    border: none;
     background-color: #333333;
     color: white;
-    outline: none;
     box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.input-field:focus {
+    background-color: #444444; 
 }
 
 /* Bouton "Suivant" */
@@ -93,12 +91,13 @@ html {
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease, transform 0.3s ease;
 }
 
 .btn-submit:hover {
-    background-color: #003ea6;
+    background-color: #0b4ec1;
     transform: scale(1.02);
+    box-shadow: 5px #2b79ff
 }
 
 /* Texte "Pas encore de compte ?" */
@@ -112,21 +111,34 @@ html {
     color: #1100ff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .register a:hover {
+    color: #3f82ff;
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
+    animation: fadeInFooter 1s ease-in-out forwards;
+}
+
+@keyframes fadeInFooter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 footer p {
@@ -136,7 +148,6 @@ footer p {
 footer i {
     padding: 8px 8px;
 }
-
 
 /* Loader pour le chargement */
 #loader {
@@ -201,29 +212,25 @@ body {
     /* Conteneur principal */
     .login-container {
         padding: 20px;
-        max-width: 90%; /* Utiliser la majorité de la largeur disponible */
-        max-height: none; /* Supprimer la limite de hauteur */
+        max-width: 90%;
+        max-height: none;
         border-radius: 8px;
     }
 
     /* Titre */
     .titre {
-        font-size: 30px; /* Réduction pour l'écran mobile */
-        text-shadow: 
-            0 0 3px #3C4E99,
-            0 0 10px #5078FF,
-            0 0 15px #85AFFF;
+        font-size: 30px;
     }
 
     /* Champs de saisie */
     .input-field {
-        font-size: 16px; /* Réduction de la taille de police */
-        padding: 10px; /* Ajustement de l'espacement */
+        font-size: 16px;
+        padding: 10px;
     }
 
     /* Bouton */
     .btn-submit {
-        font-size: 16px; /* Taille réduite */
+        font-size: 16px;
         padding: 12px;
     }
 
@@ -233,7 +240,6 @@ body {
         margin-top: 15px;
     }
 
-    /* Footer */
     footer {
         flex-direction: column;
         align-items: center;
@@ -258,10 +264,9 @@ body {
         font-size: 1.8rem;
     }
 
-    /* Background */
     body,
     html {
-        font-size: 20px; /* Réduction globale de la taille */
-        background-size: contain; /* Ajuste le fond */
+        font-size: 20px;
+        background-size: contain;
     }
 }

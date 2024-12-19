@@ -8,7 +8,6 @@
     font-family: "Orbitron", sans-serif;
 }
 
-
 body,
 html {
     height: 100%;
@@ -16,9 +15,10 @@ html {
     color: white;
     background-color: rgb(0, 0, 0);
     font-size: 25px;
+    margin: 0;
 }
 
-/* Texte de bienvenue sur le loader */
+/* Loader */
 .message {
     position: fixed;
     top: 35%;
@@ -28,6 +28,7 @@ html {
     opacity: 0.6;
 }
 
+/* Affichage du contenu avec animation */
 body {
     visibility: hidden;
     animation: showContent 2.2s ease-out forwards;
@@ -37,20 +38,8 @@ body {
     from {
         visibility: hidden;
     }
-
     to {
         visibility: visible;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        visibility: hidden;
     }
 }
 
@@ -70,25 +59,15 @@ body {
     color: #5078FF;
     font-weight: 700;
     font-family: "Audiowide", sans-serif;
-    text-shadow:
-        0 0 5px #3C4E99,
-        0 0 15px #5078FF,
-        0 0 30px #85AFFF;
+    text-shadow: 0 0 5px #3C4E99, 0 0 15px #5078FF, 0 0 30px #85AFFF;
 }
-
 
 @keyframes neon-glow {
     0%, 100% {
-        text-shadow: 
-            0 0 5px #5078FF, 
-            0 0 15px #85AFFF, 
-            0 0 25px #5078FF;
+        text-shadow: 0 0 5px #5078FF, 0 0 15px #85AFFF, 0 0 25px #5078FF;
     }
     50% {
-        text-shadow: 
-            0 0 10px #85AFFF, 
-            0 0 25px #5078FF, 
-            0 0 50px #85AFFF;
+        text-shadow: 0 0 10px #85AFFF, 0 0 25px #5078FF, 0 0 50px #85AFFF;
     }
 }
 
@@ -104,20 +83,9 @@ body {
     transition: all 0.3s ease;
 }
 
-.navigation a:hover {
-    text-shadow: 
-        0 0 5px #5078FF, 
-        0 0 10px #85AFFF, 
-        0 0 15px #5078FF;
-    color: #85AFFF;
-    border-bottom: 2px solid #5078FF;
-
-}
-
+.navigation a:hover,
 .navigation a.active {
-    text-shadow: 
-        0 0 5px #5078FF, 
-        0 0 15px #85AFFF;
+    text-shadow: 0 0 5px #5078FF, 0 0 10px #85AFFF, 0 0 15px #5078FF;
     color: #85AFFF;
     border-bottom: 2px solid #5078FF;
 }
@@ -131,53 +99,37 @@ body {
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
-
-    /* Couleurs de base */
-    background-color: rgba(80, 120, 255, 0.1); /* Fond légèrement lumineux */
-    color: #5078FF; /* Bleu néon */
+    background-color: rgba(80, 120, 255, 0.1);
+    color: #5078FF;
     border: 2px solid #3C4E99;
-
-    /* Effet néon de base */
-    box-shadow: 
-        0 0 5px #3C4E99,
-        0 0 15px #5078FF;
-
-    /* Animation au repos */
+    box-shadow: 0 0 5px #3C4E99, 0 0 15px #5078FF;
     transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-/* Effet au survol */
 .utilisateur a:hover {
-    /* Couleur du texte plus intense */
     color: #85AFFF;
-
-    /* Bordures et ombres renforcées */
     border-color: #5078FF;
-    box-shadow: 
-        0 0 10px #3C4E99, 
-        0 0 20px #5078FF, 
-        0 0 30px #85AFFF;
-
-    /* Légère mise en avant */
+    box-shadow: 0 0 10px #3C4E99, 0 0 20px #5078FF, 0 0 30px #85AFFF;
     transform: scale(1.1);
 }
 
+/* Footer */
 footer {
-    font-size:xx-small;
+    font-size: xx-small;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
-    background: linear-gradient(90deg, rgba(4, 0, 123, 0.1),rgba(2, 0, 11, 0.5), rgba(4, 0, 123, 0.1));
+    background: linear-gradient(90deg, rgba(4, 0, 123, 0.1), rgba(2, 0, 11, 0.5), rgba(4, 0, 123, 0.1));
     position: relative;
     bottom: 0;
     width: 100%;
-  }
+}
+
 /* Conteneur principal */
 .car-container {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    
 }
 
 /* Fiche voiture */
@@ -189,7 +141,7 @@ footer {
     box-shadow: 0 4px 10px rgb(255, 255, 255);
 }
 
-.car-box img{
+.car-box img {
     border-radius: 10px 10px 5px 5px;
 }
 
@@ -224,10 +176,7 @@ footer {
     color: #5078FF;
     font-weight: 700;
     font-family: "Audiowide", sans-serif;
-    text-shadow:
-        0 0 5px #2841a4,
-        0 0 10px #2047c6,
-        0 0 15px #1e48d4;
+    text-shadow: 0 0 5px #2841a4, 0 0 10px #2047c6, 0 0 15px #1e48d4;
 }
 
 .car-details .price {
@@ -243,34 +192,25 @@ footer {
     gap: 10px;
 }
 
-/* Spécifications techniques avec effet néon */
 .specs p {
     background: rgba(0, 0, 0, 0.6);
     text-align: center;
     flex: 1;
     border-radius: 10px;
-    border: 1px solid #5078FF; /* Bordure bleu néon */
-    box-shadow: 
-        0 0 5px #3e5ec6, 
-        0 0 10px #4c699f, 
-        0 0 15px #344fa9;
-    color: #85AFFF; /* Texte bleu clair */
+    border: 1px solid #5078FF;
+    box-shadow: 0 0 5px #3e5ec6, 0 0 10px #4c699f, 0 0 15px #344fa9;
+    color: #85AFFF;
     font-weight: bold;
     transition: all 0.3s ease;
-    
-}
-
-.additional-info{
-    padding-bottom: 20px;
 }
 
 .specs p strong {
     font-size: 1.2em;
     display: block;
-    color: #85AFFF; /* Texte néon */
-    
+    color: #85AFFF;
 }
-/* Bouton Commander avec effet néon */
+
+/* Bouton Commander */
 .btn-config {
     padding: 10px 15px;
     font-family: 'Orbitron', sans-serif;
@@ -279,108 +219,85 @@ footer {
     border-radius: 15px;
     cursor: pointer;
     text-decoration: none;
-
-    /* Couleurs de base */
-    background-color: rgba(80, 120, 255, 0.1); /* Fond légèrement lumineux */
-    color: #5078FF; /* Bleu néon */
+    background-color: rgba(80, 120, 255, 0.1);
+    color: #5078FF;
     border: 2px solid #3C4E99;
-
-    /* Effet néon de base */
-    box-shadow: 
-        0 0 5px #3C4E99,
-        0 0 15px #5078FF;
-
-    /* Animation au repos */
+    box-shadow: 0 0 5px #3C4E99, 0 0 15px #5078FF;
     transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .btn-config:hover {
-  /* Couleur du texte plus intense */
-  color: #85AFFF;
-
-  /* Bordures et ombres renforcées */
-  border-color: #5078FF;
-  box-shadow: 
-      0 0 10px #3C4E99, 
-      0 0 20px #5078FF, 
-      0 0 30px #85AFFF;
-
-  /* Légère mise en avant */
-  transform: scale(1.1);
+    color: #85AFFF;
+    border-color: #5078FF;
+    box-shadow: 0 0 10px #3C4E99, 0 0 20px #5078FF, 0 0 30px #85AFFF;
+    transform: scale(1.1);
 }
 
 /* Media Queries pour Responsive Design */
 @media screen and (max-width: 768px) {
     .header {
-        flex-direction: column; /* Réorganise le header verticalement */
+        flex-direction: column;
         align-items: center;
-        text-align: center; /* Centre les textes */
+        text-align: center;
     }
 
     .titre {
-        font-size: 1.5em; /* Réduit la taille du titre */
-        margin-bottom: 20px; /* Ajoute un espace sous le titre */
+        font-size: 1.5em;
+        margin-bottom: 20px;
     }
 
     .navigation {
-        gap: 15px; /* Réduit l'espacement entre les liens */
+        gap: 15px;
     }
 
     .utilisateur {
-        gap: 15px; /* Ajuste l'espacement entre les boutons */
+        gap: 15px;
         margin-top: 30px;
-
     }
 
     .specs p strong {
-        font-size: 1em; /* Réduit la taille des textes */
+        font-size: 1em;
     }
 }
 
 @media screen and (max-width: 480px) {
     body {
-        font-size: 14px; /* Réduction globale des tailles de texte */
+        font-size: 14px;
     }
 
     .header {
-        padding: 20px; /* Réduction du padding */
+        padding: 20px;
         gap: 10px;
     }
 
-    .utilisateur{
-        margin-top: 20px;
-    }
-
     .titre {
-        font-size: 1.2em; /* Encore plus petit pour économiser de l'espace */
+        font-size: 1.2em;
     }
 
     .navigation a {
-        font-size: 12px; /* Réduction des tailles de liens */
-        margin: 10px 10px; /* Ajoute un espace vertical */
+        font-size: 12px;
+        margin: 10px 10px;
     }
 
     .utilisateur a {
         font-size: 12px;
-        padding: 8px 10px; /* Ajustement du padding */
+        padding: 8px 10px;
     }
 
     .specs {
-        gap: 5px; /* Réduction de l'espacement */
+        gap: 5px;
     }
 
     .specs p {
-        font-size: 0.9em; /* Texte encore plus petit */
+        font-size: 0.9em;
     }
 
     footer {
-        font-size: 10px; /* Footer compact */
+        font-size: 10px;
     }
 
-    .btn-config{
+    .btn-config {
         padding: 10px 10px;
-        font-family: 'Orbitron', sans-serif;
-        font-weight: 600;
         font-size: 15px;
     }
 }

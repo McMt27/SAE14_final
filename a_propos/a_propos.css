@@ -3,8 +3,8 @@ body,
 html {
     height: 100%;
     margin: 0;
-    font-family: "Rajdhani", sans-serif; 
-    color: white;
+    font-family: "Rajdhani", sans-serif;
+    color: #ffffff;
     background-color: black;
     font-size: 25px;
     display: flex;
@@ -18,7 +18,7 @@ html {
     align-items: center;
     padding: 20px 40px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 2px solid rgb(61, 65, 255);
+    border-bottom: 2px solid #5078FF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -49,7 +49,7 @@ html {
 }
 
 .acceuil {
-  border-bottom: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid #ffffff;
 }
 
 .navigation a {
@@ -100,7 +100,7 @@ html {
     transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.utilisateur a :hover {
+.utilisateur a:hover {
     color: #85AFFF;
 
     border-color: #5078FF;
@@ -111,7 +111,6 @@ html {
 
     transform: scale(1.1);
 }
-
 
 header h1 {
     text-align: center;
@@ -153,7 +152,7 @@ ul li {
 
 footer {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 10px;
@@ -179,12 +178,11 @@ footer i {
     }
 
     .navigation a {
-        font-size:12px; /* Réduction des liens */
-
+        font-size: 12px; /* Réduction des liens */
     }
 
     .utilisateur a {
-        font-size:12px ; /* Réduction des boutons */
+        font-size: 12px; /* Réduction des boutons */
     }
     
     body {
@@ -237,4 +235,3 @@ footer i {
         font-size: 0.8em;
     }
 }
-

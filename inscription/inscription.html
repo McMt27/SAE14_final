@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription - Location BMW</title>
+    <title>Location BMW</title>
     <link rel="stylesheet" type="text/css" href="inscription.css">
     <script src="https://kit.fontawesome.com/5f54a5c31c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,32 +22,31 @@
         rel="stylesheet">
 </head>
 
-<body>
-    
+<body>        
+        <div class="login-container">
+            <a href="../acceuil/index2.html" class="titre">Location BMW</a>
+            <!-- Formulaire de connexion -->
+            <div class="login-box">
+                <h2>S'enregistrer</h2>
+                <p class="gmail">
+                    Veuillez saisir votre adresse e-mail et votre mot de passe
+                </p>
 
-    <div class="register">
-        <a href="../acceuil/index2.html" class="titre">Location BMW</a>
+
+                <form action="../connexion/connexion.html">
+                    <input type="email" placeholder="Adresse e-mail (gmail) *" pattern=".+@gmail\.com" required
+                        class="input-field">
+                    <input type="password" placeholder="Mot de passe (+8 caratères) *" minlength="8" required class="input-field">
+
+                    <button type="submit" class="btn-submit">Suivant</button>
+                </form>
 
 
-        <div class="register-box">
-            <h2>S'enregistrer</h2>
-            <p class="description">
-                Créez votre compte en remplissant les informations ci-dessous.
-            </p>
-
-            <form action="../connexion/connexion.html">
-                <input type="email" placeholder="Adresse e-mail (gmail) *" pattern=".+@gmail\.com" required class="input-field">
-                <input type="password" placeholder="Mot de passe (+8 caratères) *" minlength="8" required class="input-field">
-
-                <button type="submit" class="btn-submit">Créer un compte</button>
-            </form>
-
-            <p class="login">
-                Déjà un compte ? <a href="../connexion/connexion.html">Se connecter</a>
-            </p>
+                <p class="register">
+                    Déja un compte ? <a href="../connexion/connexion.html">Se connecter</a>
+                </p>
+            </div>
         </div>
-    </div>
-
 </body>
 
 </html>
