@@ -204,26 +204,18 @@ footer i {
     }
 
     .titre {
-        font-size: 20px; /* Réduction de la taille du titre */
-        padding: 0 0;
+        font-size: 20px;
     }
 
     .navigation a {
-        font-size: 12px; /* Réduction des liens */
+        font-size: 14px;
     }
 
     .utilisateur a {
-        font-size: 12px; /* Réduction des boutons */
-    }
-    
-    body {
-        font-size: 20px; /* Réduit légèrement la taille globale */
+        font-size: 14px;
+        padding: 8px 10px;
     }
 
-    header h1 {
-        font-size: 1.8em;
-    }
-    
     footer p {
         font-size: 0.9em;
     }
