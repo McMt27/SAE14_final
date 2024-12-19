@@ -293,6 +293,11 @@ footer i {
     footer p {
         font-size: 0.9em;
     }
+
+    .pub {
+        top: 80%;
+        right: 1%;
+    }
 }
 
 @media screen and (max-width: 480px) {
