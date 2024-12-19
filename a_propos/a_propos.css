@@ -80,7 +80,7 @@ html {
     border-bottom: 2px solid #5078FF;
 }
 
-.utilisateur a button {
+.utilisateur a {
     padding: 10px 15px;
     margin-inline-start: 10px;
     font-family: 'Orbitron', sans-serif;
@@ -100,7 +100,7 @@ html {
     transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.utilisateur a button:hover {
+.utilisateur a :hover {
     color: #85AFFF;
 
     border-color: #5078FF;

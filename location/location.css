@@ -83,7 +83,7 @@ html {
 }
 
 /* Boutons Connexion et Inscription */
-.utilisateur a button {
+.utilisateur a {
     padding: 10px 15px;
     margin-inline-start: 10px;
     font-family: 'Orbitron', sans-serif;
@@ -109,7 +109,7 @@ html {
 }
 
 /* Effet au survol */
-.utilisateur a button:hover {
+.utilisateur a:hover {
     /* Couleur du texte plus intense */
     color: #85AFFF;
 
