@@ -289,7 +289,7 @@ footer i {
 
     }
 
-    .utilisateur a button {
+    .utilisateur a {
         font-size:12px ; /* Réduction des boutons */
     }
     
@@ -316,7 +316,7 @@ footer i {
         display: flex;
         flex-direction: column; /* Réorganise en colonne */
         align-items: center; /* Centre les éléments horizontalement */
-        gap: 10px; /* Ajoute de l'espace entre les sections */
+        gap: 20px; /* Ajoute de l'espace entre les sections */
     }
 
     body {
@@ -335,7 +335,7 @@ footer i {
         font-size: 12px;
     }
 
-    .utilisateur a button {
+    .utilisateur a {
         font-size: 12px;
     }
 
@@ -344,7 +344,7 @@ footer i {
     }
 
     .pub{
-        top: 100%;
+        top: 80%;
         right: 1%;
     }
 }
