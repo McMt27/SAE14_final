@@ -10,7 +10,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/image/dark-headlight-bmw-laptop-4p6x5no7afj3xcc9-4084294628.jpg);
+    background-image: url(../image/dark-headlight-bmw-laptop-4p6x5no7afj3xcc9-4084294628.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,27 +149,6 @@ footer i {
     padding: 8px 8px;
 }
 
-/* Loader pour le chargement */
-#loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    color: white;
-    z-index: 1000;
-    animation: fadeOut 1s ease-out 1s forwards;
-    background-image: url(/image/dark-headlight-bmw-laptop-4p6x5no7afj3xcc9-4084294628.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .message {
     position: fixed;
     top: 35%;
@@ -264,10 +243,6 @@ body {
         font-size: 0.9em;
     }
 
-    /* Loader */
-    #loader {
-        font-size: 1.5rem;
-    }
 
     .message {
         font-size: 1.8rem;

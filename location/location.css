@@ -1,13 +1,16 @@
 /* Polices */
-
 body,
 html {
     height: 100%;
     margin: 0;
-    font-family: "Titillium Web", sans-serif;
-    color: white;
-    background-color: rgb(0, 0, 0);
+    font-family: "Rajdhani", sans-serif;
+    color: #ffffff;
+    background-color: black;
     font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 /* Header */
@@ -21,7 +24,6 @@ html {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Titre */
 .titre {
     text-decoration: none;
     color: #5078FF;
@@ -33,26 +35,21 @@ html {
         0 0 30px #85AFFF;
 }
 
-
 @keyframes neon-glow {
-
-    0%,
-    100% {
-        text-shadow:
-            0 0 5px #5078FF,
-            0 0 15px #85AFFF,
+    0%, 100% {
+        text-shadow: 
+            0 0 5px #5078FF, 
+            0 0 15px #85AFFF, 
             0 0 25px #5078FF;
     }
-
     50% {
-        text-shadow:
-            0 0 10px #85AFFF,
-            0 0 25px #5078FF,
+        text-shadow: 
+            0 0 10px #85AFFF, 
+            0 0 25px #5078FF, 
             0 0 50px #85AFFF;
     }
 }
 
-/* Navigation principale */
 .navigation a {
     font-family: 'Orbitron', sans-serif;
     font-size: 18px;
@@ -65,24 +62,22 @@ html {
 }
 
 .navigation a:hover {
-    text-shadow:
-        0 0 5px #5078FF,
-        0 0 10px #85AFFF,
+    text-shadow: 
+        0 0 5px #5078FF, 
+        0 0 10px #85AFFF, 
         0 0 15px #5078FF;
     color: #85AFFF;
     border-bottom: 2px solid #5078FF;
-
 }
 
 .navigation a.active {
-    text-shadow:
-        0 0 5px #5078FF,
+    text-shadow: 
+        0 0 5px #5078FF, 
         0 0 15px #85AFFF;
     color: #85AFFF;
     border-bottom: 2px solid #5078FF;
 }
 
-/* Boutons Connexion et Inscription */
 .utilisateur a {
     padding: 10px 15px;
     margin-inline-start: 10px;
@@ -91,36 +86,22 @@ html {
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
-
-    /* Couleurs de base */
     background-color: rgba(80, 120, 255, 0.1);
-    /* Fond légèrement lumineux */
     color: #5078FF;
-    /* Bleu néon */
     border: 2px solid #3C4E99;
-
-    /* Effet néon de base */
-    box-shadow:
+    box-shadow: 
         0 0 5px #3C4E99,
         0 0 15px #5078FF;
-
-    /* Animation au repos */
     transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-/* Effet au survol */
 .utilisateur a:hover {
-    /* Couleur du texte plus intense */
     color: #85AFFF;
-
-    /* Bordures et ombres renforcées */
     border-color: #5078FF;
-    box-shadow:
-        0 0 10px #3C4E99,
-        0 0 20px #5078FF,
+    box-shadow: 
+        0 0 10px #3C4E99, 
+        0 0 20px #5078FF, 
         0 0 30px #85AFFF;
-
-    /* Légère mise en avant */
     transform: scale(1.1);
 }
 
@@ -222,10 +203,6 @@ footer i {
 
     header h1 {
         font-size: 1.8em;
-    }
-
-    section h2 {
-        font-size: 1.6em;
     }
 
     footer p {

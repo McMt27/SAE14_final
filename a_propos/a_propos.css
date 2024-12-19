@@ -18,7 +18,7 @@ html {
     align-items: center;
     padding: 20px 40px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 2px solid #5078FF;
+    border-bottom: 2px solid rgb(61, 65, 255);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -46,10 +46,6 @@ html {
             0 0 25px #5078FF, 
             0 0 50px #85AFFF;
     }
-}
-
-.acceuil {
-    border-bottom: 3px solid #ffffff;
 }
 
 .navigation a {
@@ -88,27 +84,22 @@ html {
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
-
     background-color: rgba(80, 120, 255, 0.1);
     color: #5078FF;
     border: 2px solid #3C4E99;
-
     box-shadow: 
         0 0 5px #3C4E99,
         0 0 15px #5078FF;
-
     transition: all 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .utilisateur a:hover {
     color: #85AFFF;
-
     border-color: #5078FF;
     box-shadow: 
         0 0 10px #3C4E99, 
         0 0 20px #5078FF, 
         0 0 30px #85AFFF;
-
     transform: scale(1.1);
 }
 
@@ -191,10 +182,6 @@ footer i {
 
     header h1 {
         font-size: 1.8em;
-    }
-
-    section h2 {
-        font-size: 1.6em;
     }
 
     footer p {

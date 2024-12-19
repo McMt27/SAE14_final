@@ -233,55 +233,60 @@ footer {
     transform: scale(1.1);
 }
 
-/* Media Queries pour Responsive Design */
 @media screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
     .titre {
-        font-size: 1.5em;
-        margin-bottom: 20px;
+        font-size: 20px; 
+        padding: 0 0;
     }
 
-    .navigation {
-        gap: 15px;
+    .navigation a {
+        font-size: 12px; 
     }
 
-    .utilisateur {
-        gap: 15px;
-        margin-top: 30px;
+    .utilisateur a {
+        font-size: 12px; 
+    }
+    
+    body {
+        font-size: 20px; 
     }
 
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
     .specs p strong {
         font-size: 1em;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .titre {
-        font-size: 20px; /* Réduction de la taille du titre */
-        padding: 0 0;
+    .header {
+        display: flex;
+        flex-direction: column; /* Réorganise en colonne */
+        align-items: center; /* Centre les éléments horizontalement */
+        gap: 20px; /* Ajoute de l'espace entre les sections */
     }
 
-    .navigation a {
-        font-size: 12px; /* Réduction des liens */
-    }
-
-    .utilisateur a {
-        font-size: 12px; /* Réduction des boutons */
-    }
-    
     body {
-        font-size: 20px; /* Réduit légèrement la taille globale */
+        font-size: 18px; /* Encore plus petit pour mobiles */
     }
 
     header h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     
+    .navigation a {
+        font-size: 12px;
+    }
+
+    .utilisateur a {
+        font-size: 12px;
+    }
+
     .specs {
         gap: 5px;
     }
@@ -290,8 +295,8 @@ footer {
         font-size: 0.9em;
     }
 
-    footer {
-        font-size: 10px;
+    footer p {
+        font-size: 0.8em;
     }
 
     .btn-config {
