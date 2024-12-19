@@ -308,3 +308,79 @@ footer {
   /* Légère mise en avant */
   transform: scale(1.1);
 }
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Réorganise le header verticalement */
+        align-items: center;
+        text-align: center; /* Centre les textes */
+    }
+
+    .titre {
+        font-size: 1.5em; /* Réduit la taille du titre */
+        margin-bottom: 20px; /* Ajoute un espace sous le titre */
+    }
+
+    .navigation {
+        gap: 15px; /* Réduit l'espacement entre les liens */
+    }
+
+    .utilisateur {
+        gap: 15px; /* Ajuste l'espacement entre les boutons */
+        margin-top: 30px;
+
+    }
+
+    .specs p strong {
+        font-size: 1em; /* Réduit la taille des textes */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Réduction globale des tailles de texte */
+    }
+
+    .header {
+        padding: 20px; /* Réduction du padding */
+        gap: 10px;
+    }
+
+    .utilisateur{
+        margin-top: 20px;
+    }
+
+    .titre {
+        font-size: 1.2em; /* Encore plus petit pour économiser de l'espace */
+    }
+
+    .navigation a {
+        font-size: 12px; /* Réduction des tailles de liens */
+        margin: 10px 10px; /* Ajoute un espace vertical */
+    }
+
+    .utilisateur a {
+        font-size: 12px;
+        padding: 8px 10px; /* Ajustement du padding */
+    }
+
+    .specs {
+        gap: 5px; /* Réduction de l'espacement */
+    }
+
+    .specs p {
+        font-size: 0.9em; /* Texte encore plus petit */
+    }
+
+    footer {
+        font-size: 10px; /* Footer compact */
+    }
+
+    .btn-config{
+        padding: 10px 10px;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
