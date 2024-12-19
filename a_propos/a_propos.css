@@ -183,7 +183,7 @@ footer i {
 
     }
 
-    .utilisateur a button {
+    .utilisateur a {
         font-size:12px ; /* Réduction des boutons */
     }
     
@@ -229,7 +229,7 @@ footer i {
         font-size: 12px;
     }
 
-    .utilisateur a button {
+    .utilisateur a {
         font-size: 12px;
     }
 
