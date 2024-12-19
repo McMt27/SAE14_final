@@ -35,16 +35,19 @@ html {
 
 
 @keyframes neon-glow {
-    0%, 100% {
-        text-shadow: 
-            0 0 5px #5078FF, 
-            0 0 15px #85AFFF, 
+
+    0%,
+    100% {
+        text-shadow:
+            0 0 5px #5078FF,
+            0 0 15px #85AFFF,
             0 0 25px #5078FF;
     }
+
     50% {
-        text-shadow: 
-            0 0 10px #85AFFF, 
-            0 0 25px #5078FF, 
+        text-shadow:
+            0 0 10px #85AFFF,
+            0 0 25px #5078FF,
             0 0 50px #85AFFF;
     }
 }
@@ -62,9 +65,9 @@ html {
 }
 
 .navigation a:hover {
-    text-shadow: 
-        0 0 5px #5078FF, 
-        0 0 10px #85AFFF, 
+    text-shadow:
+        0 0 5px #5078FF,
+        0 0 10px #85AFFF,
         0 0 15px #5078FF;
     color: #85AFFF;
     border-bottom: 2px solid #5078FF;
@@ -72,8 +75,8 @@ html {
 }
 
 .navigation a.active {
-    text-shadow: 
-        0 0 5px #5078FF, 
+    text-shadow:
+        0 0 5px #5078FF,
         0 0 15px #85AFFF;
     color: #85AFFF;
     border-bottom: 2px solid #5078FF;
@@ -90,12 +93,14 @@ html {
     cursor: pointer;
 
     /* Couleurs de base */
-    background-color: rgba(80, 120, 255, 0.1); /* Fond légèrement lumineux */
-    color: #5078FF; /* Bleu néon */
+    background-color: rgba(80, 120, 255, 0.1);
+    /* Fond légèrement lumineux */
+    color: #5078FF;
+    /* Bleu néon */
     border: 2px solid #3C4E99;
 
     /* Effet néon de base */
-    box-shadow: 
+    box-shadow:
         0 0 5px #3C4E99,
         0 0 15px #5078FF;
 
@@ -110,9 +115,9 @@ html {
 
     /* Bordures et ombres renforcées */
     border-color: #5078FF;
-    box-shadow: 
-        0 0 10px #3C4E99, 
-        0 0 20px #5078FF, 
+    box-shadow:
+        0 0 10px #3C4E99,
+        0 0 20px #5078FF,
         0 0 30px #85AFFF;
 
     /* Légère mise en avant */
@@ -157,7 +162,7 @@ html {
     width: 100%;
     height: auto;
     max-height: 150px;
-    object-fit:cover;
+    object-fit: cover;
     margin-bottom: 10px;
     border-radius: 8px;
 }
@@ -168,7 +173,7 @@ html {
 
 footer {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding-top: 50px;
     padding-bottom: 10px;
@@ -183,4 +188,81 @@ footer p {
 
 footer i {
     padding: 8px 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .voiture {
+        height: auto;
+        padding: 10px;
+    }
+
+    .titre {
+        font-size: 20px;
+    }
+
+    .navigation a {
+        font-size: 14px;
+    }
+
+    .utilisateur a button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+
+/* Réduction des polices pour mobiles */
+@media screen and (max-width: 480px) {
+
+    .box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 400px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        /* Réorganise en colonne */
+        align-items: center;
+        /* Centre les éléments horizontalement */
+        gap: 10px;
+        /* Ajoute de l'espace entre les sections */
+    }
+
+    body {
+        font-size: 18px;
+        /* Encore plus petit pour mobiles */
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    .navigation a {
+        font-size: 12px;
+    }
+
+    .utilisateur a button {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
 }

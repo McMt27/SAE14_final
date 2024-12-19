@@ -16,20 +16,6 @@ html {
     animation: fadeIn 1s ease-in-out;
 }
 
-
-.page-content.hidden {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s ease, visibility 0s 1s;
-}
-
-
-.page-content {
-    visibility: visible;
-    opacity: 1;
-}
-
-
 .loader-container {
     position: fixed;
     top: 0;
@@ -99,18 +85,6 @@ html {
     background: transparent;
     transform-origin: left;
     animation: animate 2s linear infinite;
-}
-
-.loader span::before {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #00aeff;
-    top: -6px;
-    right: -8px;
-    box-shadow: 0 0 20px 5px #0066ff;
 }
 
 @keyframes animateC {
@@ -303,3 +277,71 @@ footer p {
 footer i {
     padding: 8px 8px;
 }
+
+@media screen and (max-width: 768px) {
+    .titre {
+        font-size: 20px; /* Réduction de la taille du titre */
+        padding: 0 0;
+    }
+
+    .navigation a {
+        font-size:12px; /* Réduction des liens */
+
+    }
+
+    .utilisateur a button {
+        font-size:12px ; /* Réduction des boutons */
+    }
+    
+    body {
+        font-size: 20px; /* Réduit légèrement la taille globale */
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .header {
+        display: flex;
+        flex-direction: column; /* Réorganise en colonne */
+        align-items: center; /* Centre les éléments horizontalement */
+        gap: 10px; /* Ajoute de l'espace entre les sections */
+    }
+
+    body {
+        font-size: 18px; /* Encore plus petit pour mobiles */
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    .navigation a {
+        font-size: 12px;
+    }
+
+    .utilisateur a button {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+
