@@ -228,30 +228,21 @@ footer i {
     .box {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        max-width: 400px;
+        max-width: 300px;
     }
-
     .header {
         display: flex;
-        flex-direction: column;
-        /* Réorganise en colonne */
-        align-items: center;
-        /* Centre les éléments horizontalement */
-        gap: 10px;
-        /* Ajoute de l'espace entre les sections */
+        flex-direction: column; /* Réorganise en colonne */
+        align-items: center; /* Centre les éléments horizontalement */
+        gap: 20px; /* Ajoute de l'espace entre les sections */
     }
 
     body {
-        font-size: 18px;
-        /* Encore plus petit pour mobiles */
+        font-size: 18px; /* Encore plus petit pour mobiles */
     }
 
     header h1 {
         font-size: 1.5em;
-    }
-
-    section h2 {
-        font-size: 1.2em;
     }
 
     .navigation a {
@@ -265,4 +256,5 @@ footer i {
     footer p {
         font-size: 0.8em;
     }
+
 }
