@@ -204,16 +204,28 @@ footer i {
     }
 
     .titre {
-        font-size: 20px;
+        font-size: 20px; /* Réduction de la taille du titre */
+        padding: 0 0;
     }
 
     .navigation a {
-        font-size: 14px;
+        font-size: 12px; /* Réduction des liens */
     }
 
     .utilisateur a {
-        font-size: 14px;
-        padding: 8px 10px;
+        font-size: 12px; /* Réduction des boutons */
+    }
+    
+    body {
+        font-size: 20px; /* Réduit légèrement la taille globale */
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section h2 {
+        font-size: 1.6em;
     }
 
     footer p {
@@ -230,7 +242,8 @@ footer i {
         grid-template-columns: repeat(1, 1fr);
         max-width: 300px;
     }
-    .header {
+
+.header {
         display: flex;
         flex-direction: column; /* Réorganise en colonne */
         align-items: center; /* Centre les éléments horizontalement */
@@ -244,7 +257,7 @@ footer i {
     header h1 {
         font-size: 1.5em;
     }
-
+    
     .navigation a {
         font-size: 12px;
     }
