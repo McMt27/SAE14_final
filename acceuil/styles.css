@@ -342,6 +342,11 @@ footer i {
     footer p {
         font-size: 0.8em;
     }
+
+    .pub{
+        top: 100%;
+        right: 1%;
+    }
 }
 
 
