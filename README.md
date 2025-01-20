@@ -81,7 +81,7 @@ Ce projet consiste en la création d'un site web dédié à BMW, ma passion. Le 
 ## Auteur
 **Maxence Canival**
 
-- Étudiant en 2ème année BUT Réseaux et Télécommunications, option Cybersécurité.
+- Étudiant en 1ème année BUT Réseaux et Télécommunications, option Cybersécurité.
 - Passionné par le développement web.
 - Contact : maxence.canival@etu.unicaen.fr
 
